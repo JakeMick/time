@@ -2,4 +2,4 @@
 dist
 *.o
 *.hi
-
+.cabal-sandbox/
