@@ -20,9 +20,9 @@ import           Web.Scotty                  (ActionM)
 
 layout :: Html -> Html -> Html
 layout t b = docTypeHtml $ do
-           pet "<!--[if lt IE 9 ]> <html lang="en-GB" class="no-js lt-ie9"> <![endif]-->"
-           pet "<!--[if IE 9 ]> <html lang="en-GB" class="no-js ie9"> <![endif]-->"
-           pet "<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-GB" class="no-js"> <!--<![endif]-->"
+           pet "<!--[if lt IE 9 ]> <html lang='en-GB' class='no-js lt-ie9'> <![endif]-->"
+           pet "<!--[if IE 9 ]> <html lang='en-GB' class='no-js ie9'> <![endif]-->"
+           pet "<!--[if (gt IE 9)|!(IE)]><!--> <html lang='en-GB' class='no-js'> <!--<![endif]-->"
            head $ do
              title t
              meta ! charset "utf-8"

@@ -3,14 +3,11 @@
 project_path = File.expand_path("..",File.dirname(__FILE__))
 
 
-# Set this to the root of your project when deployed:
-# -----------------------------------------------------------------------------
-
 http_path = "/"
-css_dir = "assets/css"
+css_dir = "../Static/css"
 sass_dir = "assets/css"
-images_dir = "assets/img"
-javascripts_dir = "assets/js"
+images_dir = "../Static/img"
+javascripts_dir = "../Static/js"
 #svg_dir = "assets/svg"
 #fonts_dir = "assets/fonts"
 
