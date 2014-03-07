@@ -27,36 +27,31 @@ layout t b = docTypeHtml $ do
              title t
              meta ! charset "utf-8"
              meta ! httpEquiv "X-UA-Compatible" ! content "IE=edge,chrome=1"
-             link ! href "assets/css/screen.min.css" ! rel "stylesheet"
+             link ! href "css/screen.css" ! rel "stylesheet"
+             link ! href "css/demo.css" ! rel "stylesheet"
              link ! rel "shortcut icon" ! href "favicon.ico"
              meta ! name "description" ! content "Inspire Text"
              meta ! name "viewport" ! content "initial-scale=1"
              style $ pet $ toStrict layoutCss
            body $ do
-             navBar >> b
+             div ! class_ "hero" $ do
+                h1 t
+             b
              script ! src "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" $ mempty
-             script ! src "assets/js/script.min.js" $ mempty
+             script ! src "js/script.min.js" $ mempty
+
+links :: Html
+links = p "derp"
+
 
 homeView :: ActionM ()
-homeView = blaze $ layout "home" $ do
-             div ! class_ "container" $ do
-               div ! class_ "jumbotron" $ do
-                 h1 "Scotty Starter"
-                 p "Welcome to the Scotty Starter template, equipped with Twitter Bootstrap 3.0 and HTML5 boilerplate"
-                 p $ do a ! class_ "btn btn-lg btn-primary" ! id "fb" ! href "#navbar" $ "Facebook"
-                        a ! class_ "btn btn-lg btn-danger" ! id "gmail" ! href "#navbar" $ "Gmail"
-
-navBar :: Html
-navBar = div ! class_ "navbar navbar-default navbar-static-top" $ div ! class_ "container" $ do
-           div ! class_ "navbar-header" $ do
-             button ! type_ "button"
-                    ! class_ "navbar-toggle" ! dataAttribute "toggle" "collapse" ! dataAttribute "target" ".navbar-collapse" $ do
-               a ! class_ "navbar-brand" ! href "#" $ "λ"
-           div ! class_ "navbar-collapse collapse" $ ul ! class_ "nav navbar-nav" $ do
-             li ! class_ "active" $ a ! href "#" $ "Home"
-             li $ a ! href "#about" $ "About"
-             li $ a ! href "#contact" $ "Contact"
-
-
+homeView = blaze $ layout "Welcome" $ do
+             --div ! class_ "how-to is-typeset" $ do
+             div ! class_ "row-parent" $ do
+               div ! class_ "push12-2 colspan8-5 colspan6-4 colspan2-2 as-grid with-gutter" $ do
+                 div ! class_ "col__module--cta" $ do
+                   h2 "links"
+                   links
+                    
 
 
