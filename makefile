@@ -12,6 +12,9 @@ help:
 
 host: deps init build run
 
+uglify:
+	uglifyjs Static/js/script.js -o Static/js/script.min.js -m -c
+
 init:
 
 build:

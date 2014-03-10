@@ -2,7 +2,6 @@
 
 module Views.Home (homeView) where
 
-import           Client.CSS                  (layoutCss)
 import           Data.Monoid                 (mempty)
 import           Data.Text.Lazy              (toStrict)
 import           Prelude                     hiding (div, head, id)
@@ -28,25 +27,22 @@ layout t b = docTypeHtml $ do
              meta ! charset "utf-8"
              meta ! httpEquiv "X-UA-Compatible" ! content "IE=edge,chrome=1"
              link ! href "css/screen.css" ! rel "stylesheet"
-             link ! href "css/demo.css" ! rel "stylesheet"
              link ! rel "shortcut icon" ! href "favicon.ico"
              meta ! name "description" ! content "Inspire Text"
              meta ! name "viewport" ! content "initial-scale=1"
-             style $ pet $ toStrict layoutCss
            body $ do
              div ! class_ "hero" $ do
                 h1 t
              b
              script ! src "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" $ mempty
+             script ! src "//cdnjs.cloudflare.com/ajax/libs/phaser/1.1.5/phaser.min.js" $ mempty
              script ! src "js/script.min.js" $ mempty
 
 links :: Html
 links = p "derp"
 
-
 homeView :: ActionM ()
 homeView = blaze $ layout "Welcome" $ do
-             --div ! class_ "how-to is-typeset" $ do
              div ! class_ "row-parent" $ do
                div ! class_ "push12-2 colspan8-5 colspan6-4 colspan2-2 as-grid with-gutter" $ do
                  div ! class_ "col__module--cta" $ do

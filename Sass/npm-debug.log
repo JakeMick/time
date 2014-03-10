@@ -1,0 +1,139 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'uglify-js' ]
+2 info using npm@1.3.25
+3 info using node@v0.11.12-pre
+4 verbose cache add [ 'uglify-js', null ]
+5 verbose cache add name=undefined spec="uglify-js" args=["uglify-js",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'uglify-js',
+6 verbose parsed url   path: 'uglify-js',
+6 verbose parsed url   href: 'uglify-js' }
+7 silly lockFile d31cae06-uglify-js uglify-js
+8 verbose lock uglify-js /home/derp/.npm/d31cae06-uglify-js.lock
+9 silly lockFile d31cae06-uglify-js uglify-js
+10 silly lockFile d31cae06-uglify-js uglify-js
+11 verbose addNamed [ 'uglify-js', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 679a1028-uglify-js uglify-js@
+14 verbose lock uglify-js@ /home/derp/.npm/679a1028-uglify-js.lock
+15 silly addNameRange { name: 'uglify-js', range: '*', hasData: false }
+16 verbose url raw uglify-js
+17 verbose url resolving [ 'http://registry.npmjs.org/', './uglify-js' ]
+18 verbose url resolved http://registry.npmjs.org/uglify-js
+19 info trying registry request attempt 1 at 16:12:50
+20 verbose etag "5P0YU6C4UBW6WTDYH5OXDWZFU"
+21 http GET http://registry.npmjs.org/uglify-js
+22 http 200 http://registry.npmjs.org/uglify-js
+23 silly registry.get cb [ 200,
+23 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B)',
+23 silly registry.get     etag: '"A8C2ITU3Q6XKKRAPPR4KPIWUE"',
+23 silly registry.get     'content-type': 'application/json',
+23 silly registry.get     via: '1.1 varnish, 1.1 varnish, 1.1 varnish',
+23 silly registry.get     'cache-control': 'max-age=1',
+23 silly registry.get     'content-length': '77765',
+23 silly registry.get     'accept-ranges': 'bytes',
+23 silly registry.get     date: 'Sun, 09 Mar 2014 21:12:48 GMT',
+23 silly registry.get     age: '302',
+23 silly registry.get     connection: 'close',
+23 silly registry.get     'x-served-by': 'cache-v44-ASH, cache-v37-ASH, cache-d96-DAL',
+23 silly registry.get     'x-cache': 'HIT, HIT, HIT',
+23 silly registry.get     'x-cache-hits': '28, 8114, 1',
+23 silly registry.get     'x-timer': 'S1393971991.361985445,VS0,VS214,VE214,VE427577051',
+23 silly registry.get     vary: 'Accept' } ]
+24 silly addNameRange number 2 { name: 'uglify-js', range: '*', hasData: true }
+25 silly addNameRange versions [ 'uglify-js',
+25 silly addNameRange   [ '0.0.1',
+25 silly addNameRange     '0.0.2',
+25 silly addNameRange     '0.0.3',
+25 silly addNameRange     '0.0.4',
+25 silly addNameRange     '0.0.5',
+25 silly addNameRange     '1.0.1',
+25 silly addNameRange     '1.0.2',
+25 silly addNameRange     '1.0.3',
+25 silly addNameRange     '1.0.4',
+25 silly addNameRange     '1.0.5',
+25 silly addNameRange     '1.0.6',
+25 silly addNameRange     '1.0.7',
+25 silly addNameRange     '1.1.0',
+25 silly addNameRange     '1.1.1',
+25 silly addNameRange     '1.2.0',
+25 silly addNameRange     '1.2.1',
+25 silly addNameRange     '1.2.2',
+25 silly addNameRange     '1.2.3',
+25 silly addNameRange     '1.2.4',
+25 silly addNameRange     '1.2.5',
+25 silly addNameRange     '1.2.6',
+25 silly addNameRange     '1.3.0',
+25 silly addNameRange     '1.3.1',
+25 silly addNameRange     '1.3.2',
+25 silly addNameRange     '1.3.3',
+25 silly addNameRange     '1.3.4',
+25 silly addNameRange     '2.2.0',
+25 silly addNameRange     '2.2.1',
+25 silly addNameRange     '2.2.2',
+25 silly addNameRange     '2.2.3',
+25 silly addNameRange     '2.2.4',
+25 silly addNameRange     '2.2.5',
+25 silly addNameRange     '2.3.0',
+25 silly addNameRange     '2.3.1',
+25 silly addNameRange     '2.3.2',
+25 silly addNameRange     '2.3.3',
+25 silly addNameRange     '2.3.4',
+25 silly addNameRange     '2.3.5',
+25 silly addNameRange     '2.3.6',
+25 silly addNameRange     '1.3.5',
+25 silly addNameRange     '2.4.0',
+25 silly addNameRange     '2.4.1',
+25 silly addNameRange     '2.4.2',
+25 silly addNameRange     '2.4.3',
+25 silly addNameRange     '2.4.4',
+25 silly addNameRange     '2.4.5',
+25 silly addNameRange     '2.4.6',
+25 silly addNameRange     '2.4.7',
+25 silly addNameRange     '2.4.8',
+25 silly addNameRange     '2.4.9',
+25 silly addNameRange     '2.4.10',
+25 silly addNameRange     '2.4.11',
+25 silly addNameRange     '2.4.12' ] ]
+26 verbose addNamed [ 'uglify-js', '2.4.12' ]
+27 verbose addNamed [ '2.4.12', '2.4.12' ]
+28 silly lockFile 1bc7e7b2-uglify-js-2-4-12 uglify-js@2.4.12
+29 verbose lock uglify-js@2.4.12 /home/derp/.npm/1bc7e7b2-uglify-js-2-4-12.lock
+30 silly lockFile 6cf865cc-g-uglify-js-uglify-js-2-4-12-tgz http://registry.npmjs.org/uglify-js/-/uglify-js-2.4.12.tgz
+31 verbose lock http://registry.npmjs.org/uglify-js/-/uglify-js-2.4.12.tgz /home/derp/.npm/6cf865cc-g-uglify-js-uglify-js-2-4-12-tgz.lock
+32 verbose addRemoteTarball [ 'http://registry.npmjs.org/uglify-js/-/uglify-js-2.4.12.tgz',
+32 verbose addRemoteTarball   '2354d9659f85330c1e3e2910f8acd77fe14bb4a8' ]
+33 silly lockFile 6cf865cc-g-uglify-js-uglify-js-2-4-12-tgz http://registry.npmjs.org/uglify-js/-/uglify-js-2.4.12.tgz
+34 silly lockFile 6cf865cc-g-uglify-js-uglify-js-2-4-12-tgz http://registry.npmjs.org/uglify-js/-/uglify-js-2.4.12.tgz
+35 silly lockFile 1bc7e7b2-uglify-js-2-4-12 uglify-js@2.4.12
+36 silly lockFile 1bc7e7b2-uglify-js-2-4-12 uglify-js@2.4.12
+37 silly lockFile 679a1028-uglify-js uglify-js@
+38 silly lockFile 679a1028-uglify-js uglify-js@
+39 error Error: EACCES, mkdir '/home/derp/tmp/npm-26944-WJLBOtYd'
+39 error  { [Error: EACCES, mkdir '/home/derp/tmp/npm-26944-WJLBOtYd']
+39 error   stack: 'Error: EACCES, mkdir \'/home/derp/tmp/npm-26944-WJLBOtYd\'',
+39 error   errno: -13,
+39 error   code: 'EACCES',
+39 error   path: '/home/derp/tmp/npm-26944-WJLBOtYd' }
+40 error Please try running this command again as root/Administrator.
+41 error System Linux 3.8.0-37-generic
+42 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "uglify-js"
+43 error cwd /srv/repos/George/Sass
+44 error node -v v0.11.12-pre
+45 error npm -v 1.3.25
+46 error path /home/derp/tmp/npm-26944-WJLBOtYd
+47 error code EACCES
+48 error errno -13
+49 error stack Error: EACCES, mkdir '/home/derp/tmp/npm-26944-WJLBOtYd'
+50 verbose exit [ -13, true ]
