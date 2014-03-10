@@ -36,8 +36,8 @@ layout t b = docTypeHtml $ do
            body $ do
              div ! class_ "hero" $ do
                 h1 t
-                siteLinks
              b
+             siteLinks
              script ! src "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" $ mempty
              
 siteLinks :: Html
