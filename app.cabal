@@ -3,12 +3,12 @@
 
 name:                app
 version:             0.1.0.0
-synopsis:            Starter kit project for Scotty Apps
+synopsis:            Personal Site
 -- description:         
-homepage:            https://github.com/dmjio/scotty-starter
+homepage:            http://github.JakeMick
 -- license:             
-author:              David Johnson
-maintainer:          djohnson.m@gmail.com
+author:              Jacob Mick
+maintainer:          jacob.mick@gmail.com
 -- copyright:           
 category:            Web
 build-type:          Simple
