@@ -12,7 +12,8 @@ import           Text.Blaze.Html5            (Html, a, body, button,
                                               dataAttribute, div, docTypeHtml,
                                               form, h1, h2, h4, head, header,
                                               input, li, link, meta, nav, p,
-                                              script, style, title, ul, (!), footer)
+                                              script, section, style, title,
+                                              ul, (!), footer)
 import           Text.Blaze.Html5.Attributes (charset, class_, content, href,
                                               httpEquiv, id, media, name,
                                               placeholder, rel, src, type_)
@@ -32,7 +33,7 @@ layout title' content' = docTypeHtml $ do
         header ! class_ "global-header" $ do
             title'
         body $ do
-            div ! class_ "site-content" $ do
+            section ! id "container-js" ! class_ "container" $ do
                 div ! class_ "hero" $ do
                     h1 title'
                 content'
