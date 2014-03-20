@@ -13,7 +13,7 @@ help:
 host: deps init build run
 
 uglify:
-	uglifyjs Static/js/script.js -o Static/js/script.min.js -m -c
+	uglifyjs Static/js/screen.js -o Static/js/screen.js -m -c
 
 init:
 
@@ -21,7 +21,11 @@ build:
 
 test:
 
+css:
+	compass compile seeEssEss
+
 run:
+	cabal run
 
 deps:
 	@echo "------------------------------------"
