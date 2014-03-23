@@ -13,7 +13,9 @@ help:
 host: deps init build run
 
 uglify:
-	uglifyjs Static/js/screen.js -o Static/js/screen.js -m -c
+	uglifyjs Static/js/script.js -o Static/js/script.min.js -m -c
+
+assets: uglify css
 
 init:
 
