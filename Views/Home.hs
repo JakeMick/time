@@ -2,7 +2,8 @@
 
 module Views.Home (homeView,
                    blogView,
-                   gameView) where
+--                   gameView
+                  ) where
 
 import           Data.Monoid                 (mempty)
 import           Data.Text.Lazy              (toStrict)
@@ -32,7 +33,7 @@ siteLinks :: Html
 siteLinks = ul ! class_ "main-menu" $ do
                 li $ do
                     a ! href "/" $ "Home"
-                    a ! href "/game" $ "Game"
+--                    a ! href "/game" $ "Game"
                     a ! href "/blog" $ "Blog"
 
 panelBuilder :: Html -> Html
@@ -87,10 +88,10 @@ homeView =  blaze $ layout "home" $ do
                             a ! href "/home" $ "Home page"
                             br
                             "Updates to the site will be listed here."
-                        div ! class_ "large-4 medium-4 columns" $ p $ do
-                            a ! href "/game" $ "Game"
-                            br
-                            "Awesome toys and trinkets. Machine learning, maybe an MMO."
+--                        div ! class_ "large-4 medium-4 columns" $ p $ do
+--                            a ! href "/game" $ "Game"
+--                            br
+--                            "Awesome toys and trinkets. Machine learning, maybe an MMO."
                         div ! class_ "large-4 medium-4 columns" $ p $ do
                             a ! href "/blog" $ "Blog"
                             br
@@ -102,11 +103,11 @@ blogView =  blaze $ layout "blog" $ do
                     h3 "Welcome to the blog."
                    
 
-gameView :: ActionM ()
-gameView =  blaze $ layout "game" $ do
-                div ! class_ "row" $ do
-                    h1 "game"
-                    div ! class_ "game" $ mempty
-                script ! src "//cdnjs.cloudflare.com/ajax/libs/phaser/1.1.5/phaser.min.js" $ mempty
-                script ! src "js/script.min.js" $ mempty
+--gameView :: ActionM ()
+--gameView =  blaze $ layout "game" $ do
+--                div ! class_ "row" $ do
+--                    h1 "game"
+--                    div ! class_ "game" $ mempty
+--                script ! src "//cdnjs.cloudflare.com/ajax/libs/phaser/1.1.5/phaser.min.js" $ mempty
+--                script ! src "js/script.min.js" $ mempty
 

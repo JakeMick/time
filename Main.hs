@@ -1,7 +1,8 @@
 module Main where
 
 import           Control.Applicative                  ((<$>))
-import           Controllers.Home                     (home, blog, game)
+import           Controllers.Home 
+
 import           Network.Wai.Middleware.RequestLogger (logStdoutDev)
 import           Network.Wai.Middleware.Static        (addBase, noDots,
                                                        staticPolicy, (>->))
@@ -12,6 +13,6 @@ main :: IO ()
 main = scotty 3000 $ do
          middleware $ staticPolicy (noDots >-> addBase "Static")
          middleware logStdoutDev
-         home >> blog >> game
+         home >> blog-- >> game
 
 
