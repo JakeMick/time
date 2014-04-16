@@ -17,6 +17,7 @@ cabal-version:       >= 1.10
 
 executable app
   main-is:             Main.hs
+  GHC-options:         -O2 -threaded -rtsopts
   -- other-modules:       
   other-extensions:    OverloadedStrings
   build-depends:         base 

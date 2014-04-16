@@ -13,6 +13,6 @@ main :: IO ()
 main = scotty 3000 $ do
          middleware $ staticPolicy (noDots >-> addBase "Static")
          middleware logStdoutDev
-         home >> blog-- >> game
+         home >> blog >> kata
 
 

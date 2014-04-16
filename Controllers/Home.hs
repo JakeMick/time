@@ -1,12 +1,13 @@
 {-# LANGUAGE OverloadedStrings #-}
 
 module Controllers.Home
-    ( home,
-      blog,
---      game
+    ( home
+    , blog
+    , kata
     ) where
 
-import           Views.Home (homeView, blogView)--, gameView)
+import           Views.Home (homeView, blogView)
+import           Views.Kata (kataView)
 import           Web.Scotty (ScottyM, get, html)
 
 home :: ScottyM ()
@@ -15,5 +16,5 @@ home = get "/" homeView
 blog :: ScottyM()
 blog = get "/blog" blogView
 
---game :: ScottyM()
---game = get "/game" gameView
+kata :: ScottyM()
+kata = get "/kata" kataView
